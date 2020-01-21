@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta>
+    <title>Nathan's Portfolio</title>
+  </head>
+  <body>
+    <nav id="top-navbar">
+      <a href="#section-showcase"><strong>Portfolio Name</strong></a>
+      <ul>
+        <li><a href="#section-home"> Home </a></li>
+        <li><a href="#section-about"> About </a></li>
+        <li><a href="#section-projects"> Projects </a></li>
+        <li><a href="#section-blog"> Blog </a></li>
+        <li><a href="#section-contact"> Contact </a></li>
+      </ul>
+    </nav>
+    <section id="section-showcase">
+      <div class="">
+        <h1>Title</h1>
+        <p>description</p>
+      </div>
+    </section>
+    <aside id="sidebar">
+      <h3>News:</h3>
+      <p>This is a placeholder for the news section</p>
+    </aside>
+    <section id="section-home">
+      <h1>Welcome</h1>
+      <hr>
+      <p> This page is to showcase my work in web development.</p>
+    </section>
+    <section id="section-about">
+      <h1> About </h1>
+      <hr>
+      <div>
+        <img src="images/profile.png" alt="My profile picture">
+      </div>
+      <div>
+        <h4> Nathaniel Smith </h4>
+        <p> This is info about me </p>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2"> Technical Skills </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th> Programming Tools </th>
+            <td> Java, Javascript </td>
+          </tr>
+          <tr>
+            <th> Frontend Tools </th>
+            <td> HTML, CSS </td>
+          </tr>
+          <tr>
+            <th> Database Tools </th>
+            <td> MongoDB, Mongoose, SQL </td>
+          </tr>
+          <tr>
+            <th> Version Control & Deployment Tools </th>
+            <td> git, github, gitlab </td>
+          </tr>
+          <tr>
+            <th> Architecture & Design </th>
+            <td> OOP, MEAN Stack, REST, Agile, TDD </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="section-projects">
+      <h1> Projects </h1>
+      <hr>
+      <p> Summary of projects worked on. </p>
+      <div>
+        <div id="projects">
+          <a href="#" target="_blank">
+            <div>
+              <p>Project</p>
+            </div>
+            <img src="images/logo.png" alt="My project logo">
+            <div>
+              <h4> Project Name </h4>
+            </div>
+            <div>
+              <small>by Nathan Smith</small>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="section-blog">
+      <h1> Blog </h1>
+      <hr>
+      <p>Explain what blog is about</p>
+      <hr>
+      <article>
+        <h3> Topic 1 </h3>
+        <small>Posted by Nathan Smith on 1/21/2020</small>
+        <p>Summary of this blog post</p>
+        <a href="post1.html">Read More</a>
+        <hr>
+      </article>
+    </section>
+    <section id="section-contact">
+      <h1> Contact </h1>
+      <hr>
+      <h4> Send Message </h4>
+      <form>
+        <div>
+          <input type="text" id="name" placeholder="Your Name">
+        </div>
+        <div>
+          <input type="email" id="email" placeholder="Your Email">
+        </div>
+        <div>
+          <input type="subject" id="subject" placeholder="Subject">
+        </div>
+        <div>
+          <textarea rows="4" id="message" placeholder="Message">
+          </textarea>
+        </div>
+        <button type="submit"> Submit </button>
+      </form>
+    </section>
+    <footer>
+      <div>
+        <p>Copyright &copy; 2020 Nathaniel Smith</p>
+      </div>
+    </footer>
+  </body>
+</html>
