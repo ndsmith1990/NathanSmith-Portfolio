@@ -1,0 +1,111 @@
+body{
+  background-color: rgb(42, 162, 168);
+  padding: 0;
+  margin: 0;
+}
+#navbar{
+  display: block;
+  text-align: right;
+  position: fixed;
+  top: -1em;
+  width: 100%;
+}
+.bg-dark{
+  background-color: black;
+  color: white;
+}
+.bg-white{
+  background-color: white;
+}
+.text-red{
+  color: red;
+}
+.text-blue{
+  color: cyan;
+}
+.text-green{
+  color: green;
+}
+.outline{
+  outline-width: 2px;
+  outline-style: solid;
+  padding: 5px;
+}
+.img-fluid{
+  width: 100%;
+  max-height: 100%;
+}
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: block;
+}
+.border{
+  border-style: solid;
+  border-width: 5px;
+}
+#overview{
+  text-align: center;
+  padding-top: 1em;
+}
+hr{
+  border: 3px solid #999;
+  border-radius: 5px;
+}
+#my-name{
+  text-shadow: 2px 2px #ffffff;
+  color: crimson;
+  font-size: x-large;
+}
+.container{
+  width: 80%;
+  margin: auto;
+}
+.nav-item{
+  all: unset;
+}
+ul li{
+  background: #333;
+  margin: 5px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+ul{
+  list-style-type: none;
+  background: #3399ff;
+  padding: 20px;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+a:hover{
+  color: red;
+}
+h3{
+  font-family: 'Bangers', cursive;
+}
+.title{
+  font-family: 'Sigmar One';
+  font-size: 60px;
+  text-align: center;
+  padding-top: 1em;
+}
+.subtitle{
+  color: dimgray;
+  font-style: italic;
+  text-align: center;
+  display: block;
+  font-family: 'Roboto Mono';
+  font-size: 24px;
+}
+.small-title{
+  color: orange;
+  font-family: 'Muli';
+}
+.paragraph{
+  font-family: 'Inconsolata'
+}
