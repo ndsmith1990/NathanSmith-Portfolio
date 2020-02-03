@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(42, 162, 168);
+  background-image: url("genericImages/circuit.jpg");
   padding: 0;
   margin: 0;
 }
@@ -47,7 +47,10 @@ body{
 }
 #overview{
   text-align: center;
-  padding-top: 1em;
+  padding-top: 1em
+}
+.text-yellow{
+  color: gold;
 }
 hr{
   border: 3px solid #999;
@@ -70,11 +73,14 @@ ul li{
   margin: 5px;
   border: 1px solid #ddd;
   text-align: center;
+  width: 28%;
+  margin-left: 360px;
+  color: white
 }
 ul{
   list-style-type: none;
-  background: #3399ff;
-  padding: 20px;
+  padding: 10px;
+  margin: 0px;
 }
 a{
   text-decoration: none;
@@ -85,9 +91,6 @@ a{
 a:hover{
   color: red;
 }
-h3{
-  font-family: 'Bangers', cursive;
-}
 .title{
   font-family: 'Sigmar One';
   font-size: 60px;
@@ -95,12 +98,13 @@ h3{
   padding-top: 1em;
 }
 .subtitle{
-  color: dimgray;
+  color: gold;
   font-style: italic;
   text-align: center;
   display: block;
   font-family: 'Roboto Mono';
   font-size: 24px;
+  font-weight: bold;
 }
 .small-title{
   color: orange;
@@ -108,4 +112,50 @@ h3{
 }
 .paragraph{
   font-family: 'Inconsolata'
+}
+.header {
+  vertical-align: top;
+  height: auto !important;
+  font-family: Helvetica,sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px;
+  padding: 20px;
+  background-color: pink;
+  width: 280px;
+  border-radius: 10px;
+}
+
+.section {
+  display:none;
+  font-family: Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.show {
+  display: none;
+    text-decoration: none;
+}
+
+.hide:target + .show {
+  display: inline;
+  text-decoration: none;
+}
+
+.hide:target {
+  display: none;
+  text-decoration: none;
+}
+
+.hide:target ~ .answer {
+  display:inline;
+  text-decoration: none;
+
+}
+
+@media print {
+  .hide, .show {
+    display: none;
+  }
 }
