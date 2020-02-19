@@ -6,12 +6,15 @@ body{
   display: block;
   text-align: right;
   position: fixed;
-  top: 2px;
+  top: 1px;
   width: 100%;
 }
-#overview{
+.overview{
   text-align: center;
-  padding-top: 1em
+  background: #333;
+  width: 28%;
+  margin-left: 365px;
+  color: gold;
 }
 #logo{
   display: inline-block;
@@ -69,4 +72,51 @@ footer h4{
   right: 0;
   bottom: 0;
   left: 110px;
+}
+body{
+  background-image: url("../genericImages/circuit.jpg");
+}
+.bg-white{
+  background-color: white;
+}
+.outline{
+  outline-width: 2px;
+  outline-style: solid;
+  padding: 5px;
+}
+ul li{
+  background: #333;
+  margin: 5px;
+  border: 1px solid #ddd;
+  text-align: center;
+  width: 28%;
+  margin-left: 360px;
+  color: white
+}
+ul{
+  list-style-type: none;
+  padding: 10px;
+  margin: 0px;
+}
+.title{
+  font-family: 'Sigmar One';
+  font-size: 60px;
+  text-align: center;
+  padding-top: 1em;
+}
+.subtitle{
+  color: gold;
+  font-style: italic;
+  text-align: center;
+  display: block;
+  font-family: 'Roboto Mono';
+  font-size: 24px;
+  font-weight: bold;
+}
+.small-title{
+  color: orange;
+  font-family: 'Muli';
+}
+.paragraph{
+  font-family: 'Inconsolata'
 }
