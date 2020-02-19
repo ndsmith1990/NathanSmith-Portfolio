@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Combat Screen</title>
+    <link rel="stylesheet" href="./combatScreen.css">
+  </head>
+  <body>
+    <div class="background">
+      <div class="monster side-by-side">
+        <div>
+          <p id="monster-name">Your Name</p>
+          <div class="">
+            <div class="healthBarShell">
+              <div class="healthBarMonsterValue" id="healthBarMonsterValue"></div>
+            </div>
+          </div>
+          <div class="side-by-side">
+            <p id="monster-health-num">Health: 200/200</p>
+            <p id="monster-magic" class="magic">Magic: 5</p>
+            <p id="monster-potions" class="potions">Potions: 3</p>
+          </div>
+        </div>
+        <img src="" alt="" id="monster-pic"class="picture">
+      </div>
+      <div class="side-by-side">
+        <form class="commentary">
+          <textarea disabled name="name" rows="4" cols="80" id="commentary">Pick your next move!</textarea>
+        </form>
+        <button type="button" name="attack" class="button" id="attack">
+          <img src="./Images/sword.png" alt="" class="button-pic">
+        </button>
+        <button type="button" name="magic" class="button" id="magic">
+          <img src="./Images/magic.jpg" alt="" class="button-pic">
+        </button>
+        <button type="button" name="potion" class="button" id="potion">
+          <img src="./Images/potion.webp" alt="" class="button-pic">
+        </button>
+        <button type="button" name="reset" id="reset" class="button" onclick="onClick()">Reset</button>
+      </div>
+      <div class="player side-by-side">
+        <div>
+          <p id="player-name">Your Name</p>
+          <div class="">
+            <div class="healthBarShell">
+              <div class="healthBarPlayerValue" id="healthBarPlayerValue"></div>
+            </div>
+          </div>
+          <div class="side-by-side">
+            <p id="player-health-num">Health: 200/200</p>
+            <p id="player-magic" class="magic">Magic: 5</p>
+            <p id="player-potions" class="potions">Potions: 3</p>
+          </div>
+        </div>
+        <img src="./Images/orc.webp" alt="" class="picture">
+      </div>
+    </div>
+    <script type="text/javascript" src="./scripts/Character.js"></script>
+    <script type="text/javascript" src="./scripts/views.js"></script>
+    <script type="text/javascript" src="./scripts/combatControl.js"></script>
+  </body>
+</html>

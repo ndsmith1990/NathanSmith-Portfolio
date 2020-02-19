@@ -10,6 +10,9 @@ body{
   top: -1em;
   width: 100%;
 }
+#logo{
+  display: inline-block;
+}
 .bg-dark{
   background-color: black;
   color: white;
@@ -60,6 +63,7 @@ hr{
   text-shadow: 2px 2px #ffffff;
   color: crimson;
   font-size: x-large;
+  display: inline-block;
 }
 .container{
   width: 80%;
@@ -112,4 +116,14 @@ a:hover{
 }
 .paragraph{
   font-family: 'Inconsolata'
+}
+footer{
+  position: relative;
+}
+footer h4{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 110px;
 }

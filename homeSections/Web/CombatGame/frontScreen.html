@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta>
+    <title>Fantasy Battle</title>
+    <link rel="stylesheet" href="./frontScreen.css">
+  </head>
+  <body>
+    <section class="background">
+      <h1>Welcome to Fantasy Battle!</h1>
+      <p>This game is going to be a little bit different. Instead of the player being the "good guy", you play as
+        an Orc that has just lost the rest of his scouting party and has stumbled on an opponent.</p>
+      <h4>Rules</h4>
+      <ul>
+        <li>You have 200 health points, you lose all, you lose the game.</li>
+        <li>You have 20 points that you can put into either strength or magic.</li>
+        <li>Your opponent will be picked randomly and will either be an Elf, a Knight, or a Gnome.</li>
+        <li>To use your magic, you must have 5 magic points. These points do regenerate over time (1 point per turn).</li>
+        <li>When the enemy uses magic, there is the possibility of your character getting stunned. While stunned you cannot attack.
+          This is also true for your magic attacks.</li>
+        <li>While selecting your strength, remember that a random number between 0 and your strength will be picked for your damage.</li>
+        <li>There is a possibility of either side doing a critical strike. This will add 5 damage points to the hit and the possibility of being stunned.</li>
+        <li>Both you and your opponent have 3 potions to heal the user by 50 points. Use them wisely.</li>
+      </ul>
+      <h4 class="center">Pick your Attributes</h4>
+      <h6 class="center" id="attPoints">Attribute Points Left: 20</h6>
+      <p class="center" id="pointsError">You must use all your attribute points!</p>
+      <div class="center name">
+        <label class="nameText">Name: </label>
+        <input type="text" id="name" name="" value="">
+        <span id="nameError">Name must not be blank!</span>
+      </div>
+      <div class="center strength">
+        <label>Strength:</label>
+        <img src="./Images/left.gif" alt="" height="25" id="down-strength">
+        <input disabled min="0" type="number" value="0" id="strength" id="getUp">
+        <img src="./Images/right.gif" alt="" height="25" id="up-strength">
+      </div>
+      <div class="center magic">
+        <label>Magic:</label>
+        <img src="./Images/left.gif" alt="" height="25" id="down-magic">
+        <input disabled min="0" type="number" value="0" id="magic" id="getUp">
+        <img src="./Images/right.gif" alt="" height="25" id="up-magic">
+      </div>
+      <div class="center">
+        <button class="center button" type="button" name="button" id="submit" onclick="onClick()">Submit</button>
+      </div>
+    </section>
+    <script src="./scripts/Character.js"></script>
+    <script src="./scripts/frontMain.js"></script>
+    <script src="./scripts/frontControl.js"></script>
+    <script src="./scripts/views.js"></script>
+  </body>
+</html>

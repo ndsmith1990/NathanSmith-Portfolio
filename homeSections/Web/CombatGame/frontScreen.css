@@ -1,0 +1,59 @@
+.background{
+  background-image: url("./Images/field.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+img{
+  padding-top: 10px;
+  position: relative;
+  top: 7.5px;
+}
+#getUp{
+  position: relative;
+  top: -5px;
+}
+.button{
+  margin-top: 30px;
+}
+.center{
+  text-align: center;
+}
+.name{
+  margin-left:155px;
+}
+.strength{
+  margin-right: 25px;
+}
+.magic{
+  margin-right: 10px;
+}
+#nameError{
+  visibility: hidden;
+  color: red;
+}
+body{
+  margin: 0px;
+}
+.magic{
+  color: white;
+}
+@media screen and (max-width: 1250px) {
+  .magic{
+    color: white;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .strength{
+    color: white;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .nameText{
+    color: white;
+  }
+}
+#pointsError{
+  color: red;
+  visibility: hidden;
+}

@@ -1,0 +1,20 @@
+#website-title{
+  font-size: 100pt;
+  color: teal;
+  font-family: "Odibee Sans";
+}
+#navbar-title{
+  font-family: "Odibee Sans";
+  font-size: 25pt;
+}
+.nav-item{
+  font-family: "Coda Caption";
+}
+section:before{
+  height: 70px;
+  content: "";
+  display: block;
+}
+section{
+  min-height: 100vh;
+}

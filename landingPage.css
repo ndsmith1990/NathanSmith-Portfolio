@@ -1,0 +1,71 @@
+section:before{
+  height: 50px;
+  content: "";
+  display: block;
+}
+section{
+  min-height: 100vh;
+}
+h1{
+  font-family: "Coda Caption";
+}
+p{
+  font-family: Poppins
+}
+#section-showcase{
+  background-image: url(./images/cavern.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh
+}
+#form-name{
+  margin-left: 5px;
+  margin-right: 95px;
+}
+#gradient{
+  background-image: linear-gradient(tan, darkslategray);
+}
+#website-title{
+  font-size: 100pt;
+  color: teal;
+  font-family: "Odibee Sans";
+}
+#navbar-title{
+  font-family: "Odibee Sans";
+  font-size: 25pt;
+}
+.nav-item{
+  font-family: "Coda Caption";
+}
+html{
+  scroll-behavior: smooth;
+}
+.circles {
+margin: 0 auto 10;
+list-style: none;
+text-align: center;
+}
+.circles li {
+font-size: 20pt;
+display: inline-block;
+background-color: #34495E;
+padding-top: 70px;
+margin: 60px 30px 30px;
+width: 200px;
+height: 200px;
+border-radius: 100%;
+border: 2px solid white;
+}
+.circles li a {
+color: white;
+border-radius: 50%;
+font-family: "Sriracha"
+}
+.circles li a:hover {
+color: orange;
+}
+.circle li:hover {
+padding-top: 0;
+margin-top: 1px;
+font-size: 25pt;
+}
