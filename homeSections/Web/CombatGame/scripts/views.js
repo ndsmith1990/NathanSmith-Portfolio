@@ -33,7 +33,7 @@ function getMonster(){
   else if(num == 1){
     monster = new Character(10, 2, 200);
     monster.setName("Knight");
-    document.getElementById("monster-pic").src = "./Images/knight.png"
+    document.getElementById("monster-pic").src = "./Images/knight.jpg"
   }
   else if(num == 2){
     monster = new Character(8, 10, 200);

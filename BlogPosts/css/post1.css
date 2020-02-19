@@ -1,0 +1,50 @@
+body{
+  background-image: url("../genericImages/circuit.jpg");
+}
+.bg-white{
+  background-color: white;
+}
+.outline{
+  outline-width: 2px;
+  outline-style: solid;
+  padding: 5px;
+}
+.text-yellow{
+  color: gold;
+}
+ul li{
+  background: #333;
+  margin: 5px;
+  border: 1px solid #ddd;
+  text-align: center;
+  width: 28%;
+  margin-left: 360px;
+  color: white
+}
+ul{
+  list-style-type: none;
+  padding: 10px;
+  margin: 0px;
+}
+.title{
+  font-family: 'Sigmar One';
+  font-size: 60px;
+  text-align: center;
+  padding-top: 1em;
+}
+.subtitle{
+  color: gold;
+  font-style: italic;
+  text-align: center;
+  display: block;
+  font-family: 'Roboto Mono';
+  font-size: 24px;
+  font-weight: bold;
+}
+.small-title{
+  color: orange;
+  font-family: 'Muli';
+}
+.paragraph{
+  font-family: 'Inconsolata'
+}
