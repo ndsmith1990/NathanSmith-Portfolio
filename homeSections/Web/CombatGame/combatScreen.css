@@ -78,3 +78,26 @@ textarea{
 .potions{
   margin-left: 50px;
 }
+#navbar{
+  display: block;
+  text-align: right;
+  position: fixed;
+  width: 100%;
+}
+.nav-item{
+  all: unset;
+}
+ul li{
+  background: #333;
+  margin: 5px;
+  border: 1px solid #ddd;
+  text-align: center;
+  width: 28%;
+  margin-left: 360px;
+  color: white
+}
+ul{
+  list-style-type: none;
+  padding: 10px;
+  margin: 0px;
+}

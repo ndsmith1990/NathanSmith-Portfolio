@@ -56,3 +56,27 @@ button:hover{
 .btn-clear{
  background: red;
 }
+
+#navbar{
+  display: block;
+  text-align: right;
+  position: fixed;
+  top: 1px;
+  width: 100%;
+}
+.bg-dark{
+  background-color: black;
+  color: white;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+a:hover{
+  color: red;
+}
+.nav-item{
+  all: unset;
+}
