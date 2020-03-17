@@ -4,7 +4,7 @@ body{
 }
 #navbar{
   display: block;
-  text-align: right;
+  text-align: right !important;
   position: fixed;
   top: 1px;
   width: 100%;
@@ -20,7 +20,7 @@ body{
   display: inline-block;
 }
 .bg-dark{
-  background-color: black;
+  background-color: black !important;
   color: white;
 }
 .img-fluid{
@@ -42,10 +42,11 @@ hr{
   border-radius: 5px;
 }
 #my-name{
-  text-shadow: 2px 2px #ffffff;
-  color: crimson;
+  text-shadow: 2px 2px gold;
+  color: firebrick;
   font-size: x-large;
   display: inline-block;
+  padding-top: 30px;
 }
 .container{
   width: 80%;
@@ -84,7 +85,7 @@ body{
   outline-style: solid;
   padding: 5px;
 }
-ul li{
+.list{
   background: #333;
   margin: 5px;
   border: 1px solid #ddd;
@@ -93,7 +94,7 @@ ul li{
   margin-left: 360px;
   color: white
 }
-ul{
+.ul-overview{
   list-style-type: none;
   padding: 10px;
   margin: 0px;
@@ -106,6 +107,7 @@ ul{
   color: white;
 }
 .subtitle{
+  background-color: black;
   color: gold;
   font-style: italic;
   text-align: center;

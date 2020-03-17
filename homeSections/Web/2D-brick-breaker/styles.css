@@ -1,0 +1,30 @@
+#mycanvas{
+    background-color: teal;
+    margin: 125px 0px 125px 295px;
+}
+#navbar{
+  display: block;
+  text-align: right;
+  position: fixed;
+  top: 1px;
+  width: 100%;
+}
+.bg-dark{
+  background-color: black;
+  color: white;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+a:hover{
+  color: red;
+}
+.nav-item{
+  all: unset;
+}
+.background{
+  background-color: black;
+}
