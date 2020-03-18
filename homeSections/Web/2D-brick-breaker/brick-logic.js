@@ -22,6 +22,7 @@ let brickHeight = 24;
 let brickPadding = 12;
 let brickOffsetTop = 32;
 let brickOffsetLeft = 32;
+let bricksLeft = 0;
 //Create variables to take score
 var localstorage;
 var score;
@@ -42,13 +43,22 @@ catch{
   highscore = 0;
 }
 
+
 //Creating arrays for the bricks
 let bricks = [];
 for (c =0; c<brickColumnCount; c++){
     bricks[c] = [];
     for(r=0; r<brickRowCount; r++){
+        const random = ~~(Math.random() * 4);
+        if(random == 0){
+          bricks[c][r] = {x:0, y:0, status: 0};
+        }
+        else{
+          bricks[c][r] = { x: 0, y: 0, status: 1};
+          bricksLeft++;
+        }
         //set the x and y position of the bricks
-        bricks[c][r] = { x: 0, y: 0, status: 1};
+
     }
 }
 
@@ -131,8 +141,9 @@ function collisionDetection(){
                 if(x > b.x && x < b.x + brickWidth && y > b.y && y < b.y + brickHeight){
                     dy = -dy;
                     b.status = 0;
+                    bricksLeft--;
                     score++;
-                    if (score === brickRowCount*brickColumnCount){
+                    if (bricksLeft == 0){
                         if(confirm('Congratulations!! You cleared this stage. Continue?')){
                           localstorage.score = score;
                           document.location.reload();
@@ -141,6 +152,7 @@ function collisionDetection(){
                           if(score > highscore){
                             localstorage.highscore = score;
                             alert('Congratulations!! You set a high score!');
+                            localStorage.score = 0;
                             document.location.reload();
                           }
                           else{
@@ -183,6 +195,7 @@ function draw(){
             if(score > highscore){
               localstorage.highscore = score;
             }
+            localstorage.score = 0;
             document.location.reload();
         }
     }
