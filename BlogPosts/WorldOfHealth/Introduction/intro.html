@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Introduction </title>
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+  <body>
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a href='../../../index.html' class="text-white"> Home </a>
+    </nav>
+    <h1 class="title"> Introduction to <i>World of Health</i> </h1>
+
+    <img src='./Images/first.jfif' class="center border">
+    <small class="subtitle">Source: <a href="https://boulevardla.com/blog/what-are-the-different-types-of-medical-practices/healthcare-and-medical-concept-medicine-doctor-with-stethoscope-in-hand-and-patients-come-to-the-hospital-background/">www.boulevardla.com</a></small>
+
+    <div class="container">
+
+      <h3 class="small-title">Intro</h3>
+      <p class="bg-white outline paragraph">
+          In the past several years, I have been forced to realize that a person's health isn't always as stable as it seems.
+          A person that is dear to me was diagnosed with MS, one was diagnosed with Bipolar II disorder and sleep apnea,
+          and another had a stroke that paralyzed her left side. I'm not saying this to get sympathy, but for people
+          to realize that they need to take better care of themselves. Which is why I am proud to introduce a little
+          help with keeping track of one's health in the form of a web application called <i>World of Health</i>, a
+          combination of a fitness tracker and medical information tracker.
+      </p>
+      <div>
+        <h3 class="text-yellow overview"> Overview </h3>
+        <ul class="ul-overview">
+            <li class="list"><a class="white-text" href="#Fitness">Fitness</a></li>
+            <li class="list"><a class="white-text" href="#Medical">Medical</a></li>
+        </ul>
+      </div>
+
+      <img src="Images/exercises.jpg" class="center border" id="Fitness">
+      <small class="subtitle">Source: <a href="https://clipartart.com/categories/weight-lifting-clipart-no-copyright.html">clipartart.com</a></small>
+      <h3 class="small-title">Fitness</h3>
+      <p class="bg-white outline paragraph">
+          Fitness is a huge part of staying healthy. Which is why it is so imprtant to exercise and eat right.
+          <i>World of Health</i> is going to be here to help. It will have a weight tracker, waist size tracker
+          and BMI tracker. It will have a place to keep track of your 1-mile run times and 1-minute sit-ups and push-ups.
+          For those that are more interested in lifting heavy things, it will have a tracker for weights as well as reps
+          on squats, bench press, leg press, and deadlift. Finally, it is going to have a place to track your exercises
+          such as bicycling, distance running, planks, etc.
+      </p>
+
+      <img src="Images/medical.png" class="center border" id="Medical">
+      <small class="subtitle">Source: <a href="https://publicdomainvectors.org/en/free-medical-clinic-clipart">publicdomainvectors.org</a></small>
+      <h3 class="small-title">Medical</h3>
+      <p class="bg-white outline paragraph">
+          For some people, keeping track of medical necessities can be hard to accomplish. That is where <i>World of Health</i>
+          comes in. <i>World of Health</i> will have a medical item (pills, CPAP mask, etc) tracker so that you will always know
+          how much you have or when you need to replace it or order more. It will send out reminder emails when your stock of
+          pills is getting low or when your oxygen tank, for example, needs to be recharged. It will also have a place
+          to keep track of what doctors you see, how to get ahold of them and your appointments with them. As with the
+          medical items, it will send an email the day before your appointment to remind you. <i>World of Health</i> will
+          have a place to track your symptoms so that you can have a record of when you have them. In addition, it will have
+          a place to keep track of illnesses, whether it be something that is permanant or temporary.
+      </p>
+    </div>
+    <hr class="normal">
+    <h3 class="subtitle">Comments</h3>
+    <ul id="chat-list" class="list-unstyled"></ul>
+    <div id="chat-form">
+      <div>
+        <input  class="form-control col-md-4" type="text" id="name" placeholder="name">
+      </div>
+      <div>
+        <textarea class="form-control col-md-4" rows="4" id="message" placeholder="message"></textarea>
+      </div>
+      <button type="button" id="submit"> Submit </button>
+    </div>
+    <hr class="normal">
+    <footer>
+      <img src="../../../images/logo.png" id="logo" height="100" width="100">
+      <h4 id="my-name">Nathan Smith</h4>
+    </footer>
+    <script src="scripts/chat-data.js"></script>
+    <script src="../../commonScripts/chat-model.js"></script>
+    <script src="../../commonScripts/chat-view.js"></script>
+    <script src="../../commonScripts/chat-controller.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
