@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Initial Deployment </title>
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+  <body>
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a href='../../../index.html' class="text-white"> Home </a>
+    </nav>
+    <h1 class="title"> Initial Deployment of the <i>World of Health</i> </h1>
+
+    <img src='./Images/construction.jpg' class="center border">
+    <small class="subtitle">Source: <a href="https://pixabay.com/images/search/under%20construction/">www.pixabay.com</a></small>
+
+    <div class="container">
+
+      <h3 class="small-title">Intro</h3>
+      <p class="bg-white outline paragraph">
+          Finally, the <i>World of Health</i> has been deployed! I will definitely say that it is not perfect
+          (or even mostly running for that matter), but all the initial set up is done. The screens are set up the
+          way that I want them for the most part, the database is completely set up, and the server is....not working
+          correctly yet. There is still so much work to be done on this project, but I promise that one day it will be
+          done. And of course, I will keep you updated on how it is going. But, without further ado, a brief summary of
+          the current functionality and the known bugs.
+      </p>
+      <div>
+        <h3 class="text-yellow overview"> Overview </h3>
+        <ul class="ul-overview">
+            <li class="list"><a class="white-text" href="#Function">Functionality</a></li>
+            <li class="list"><a class="white-text" href="#Bugs">Bugs</a></li>
+        </ul>
+      </div>
+
+      <img src="Images/cant.jpg" class="center border" id="Function">
+      <h3 class="small-title">Functionality</h3>
+      <p class="bg-white outline paragraph">
+          Ok, so, the bad news is that, due to time constraints, I had to cut out a feature. I had to cut out the run tracker.
+          I know that it doesn't seem like a big deal, but I said that it would be part of the <i>World of Health</i> and I
+          plan on keeping that promise...eventually.
+      </p>
+
+      <img src="Images/bugs.jpg" class="center border" id="Bugs">
+      <small class="subtitle">Source: <a href="https://www.thoughtco.com/is-it-a-bug-or-insect-3970968">thoughtco.com</a></small>
+      <h3 class="small-title">Known Bugs</h3>
+      <p class="bg-white outline paragraph">
+          Alright, down to the nitty-gritty details; the stuff that no programmer wants to talk about. There are a lot of
+          known bugs currently in the <i>World of Health</i>. The biggest problem currently, is that only one tracker currently
+          saves information to the database, as far as I know (I haven't tested all of them yet). Secondly, the graph that
+          I promised would be on each tracker is currently broken. Thanks to Ted Holmberg (who showed me <a href="https://plotly.com/javascript/">plotly</a>),
+          that should be fixed as soon as I can devote more time to working on this app (currently have to focus on work
+          and finals; gotta make that money and graduate). Similarly, the table on each tracker is not fully fleshed out.
+          Admittedly, these bugs make the app completely unusable (I know, I know, it makes me mad too). I promise you,
+          these bugs will be fixed (hopefully by the end of summer) and the <i>World of Health</i> will be a fully functional application!
+      </p>
+    </div>
+    <hr class="normal">
+    <h3 class="subtitle">Comments</h3>
+    <ul id="chat-list" class="list-unstyled"></ul>
+    <div id="chat-form">
+      <div>
+        <input  class="form-control col-md-4" type="text" id="name" placeholder="name">
+      </div>
+      <div>
+        <textarea class="form-control col-md-4" rows="4" id="message" placeholder="message"></textarea>
+      </div>
+      <button type="button" id="submit"> Submit </button>
+    </div>
+    <hr class="normal">
+    <footer>
+      <img src="../../../images/logo.png" id="logo" height="100" width="100">
+      <h4 id="my-name">Nathan Smith</h4>
+    </footer>
+    <script src="scripts/chat-data.js"></script>
+    <script src="../../commonScripts/chat-model.js"></script>
+    <script src="../../commonScripts/chat-view.js"></script>
+    <script src="../../commonScripts/chat-controller.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
