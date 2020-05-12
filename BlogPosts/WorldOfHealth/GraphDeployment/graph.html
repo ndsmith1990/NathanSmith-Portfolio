@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Graph Deployment </title>
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+  <body>
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a href='../../../index.html' class="text-white"> Home </a>
+    </nav>
+    <h1 class="title"> Graph Deployment on the Weight Tracker </h1>
+
+    <img src='./Images/graphs.jpg' class="center border">
+    <small class="subtitle">Source: <a href="https://www.greatschools.org/gk/articles/5th-grade-charts-graphs-math-worksheets/">greatschools.org</a></small>
+
+    <div class="container">
+
+      <h3 class="small-title">Intro</h3>
+      <p class="bg-white outline paragraph">
+          As promised, I have been working on <i>World of Health</i> intermittently when I am not working at my current
+          job or studying for finals, which means that it has been slow going. My first concern was working on the graph
+          functionality. Even though I haven't done much, I wanted to give an update to show that I am working on it.
+      </p>
+      <div>
+        <h3 class="text-yellow overview"> Overview </h3>
+        <ul class="ul-overview">
+            <li class="list"><a class="white-text" href="#Function">Functionality</a></li>
+            <li class="list"><a class="white-text" href="#Bugs">Moving Forward</a></li>
+        </ul>
+      </div>
+
+      <img src="Images/code.png" class="center border" id="Function">
+      <h3 class="small-title">Functionality</h3>
+      <p class="bg-white outline paragraph">
+          Currently, the graph element is fully functional only on the weight and BMI trackers. My idea is to get full
+          functionality on a few trackers at a time. This should make it fairly easy to get all the trackers done. I am
+          making sure that my trackers' functions are not specific to that tracker page, but for at least one of the pages
+          I will have to make each piece of code specific to that tracker, simply because that tracker is different from
+          all the others.
+      </p>
+
+      <img src="Images/move.jpeg" class="center border" id="Bugs">
+      <small class="subtitle">Source: <a href="https://hackernoon.com/moving-forward-2381b37865d9">hackernoon.com</a></small>
+      <h3 class="small-title">Moving Forward</h3>
+      <p class="bg-white outline paragraph">
+          Alright, so the weight graph is done, so what is next? The next piece of functionality that I plan to work on
+          is the table on the weight tracker. Implementing this feature should get the all the trackers except the "other"
+          tracker up and running. So the next blog post about this application should announce that the fitness side of
+          the app is fully functional with the exception of the other tracker.
+      </p>
+    </div>
+    <hr class="normal">
+    <h3 class="subtitle">Comments</h3>
+    <ul id="chat-list" class="list-unstyled"></ul>
+    <div id="chat-form">
+      <div>
+        <input  class="form-control col-md-4" type="text" id="name" placeholder="name">
+      </div>
+      <div>
+        <textarea class="form-control col-md-4" rows="4" id="message" placeholder="message"></textarea>
+      </div>
+      <button type="button" id="submit"> Submit </button>
+    </div>
+    <hr class="normal">
+    <footer>
+      <img src="../../../images/logo.png" id="logo" height="100" width="100">
+      <h4 id="my-name">Nathan Smith</h4>
+    </footer>
+    <script src="scripts/chat-data.js"></script>
+    <script src="../../commonScripts/chat-model.js"></script>
+    <script src="../../commonScripts/chat-view.js"></script>
+    <script src="../../commonScripts/chat-controller.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
