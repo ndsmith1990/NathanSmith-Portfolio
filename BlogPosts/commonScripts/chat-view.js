@@ -12,7 +12,6 @@ const showComments = function(sheetData){
 const addComment = function(row){
   const [time, name, message] = row;
   const chatList = document.getElementById('chat-list');
-  let id = 0;
   chatList.innerHTML += `<li class="bg-white"><div class="font-italic">${time}: ${name}</div> <div>${message}</div><hr class="comment-hr"></li>`;
 }
 
